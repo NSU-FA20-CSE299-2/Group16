@@ -19,8 +19,8 @@
 <p><strong>&nbsp;</strong></p>
 
 <p><strong>INTRODUCTION</strong></p>
-<p style="text-align: justify;">In today’s world, Food has become more than just a necessity. The restaurant business has become more challenging and competitive day by day. Designing a restaurant business means committing responsibilities such as providing excellent service, quality food, and a fantastic atmosphere, taking a lot of time and money. We often see their business fall apart after doing all this because people usually do not know much about it. There is nothing where people can know anything about restaurants in one place.</p>
-<p style="text-align: justify;">My goal is to make a web application where people can know more about various restaurants in one place. From anywhere, they can check the details about the different restaurants, what service they provide, which items are available, where the restaurant is located, and many more. People can also give reviews on food items.<p/>
+<p align: "justify">In today’s world, Food has become more than just a necessity. The restaurant business has become more challenging and competitive day by day. Designing a restaurant business means committing responsibilities such as providing excellent service, quality food, and a fantastic atmosphere, taking a lot of time and money. We often see their business fall apart after doing all this because people usually do not know much about it. There is nothing where people can know anything about restaurants in one place.</p>
+<p align:"justify">My goal is to make a web application where people can know more about various restaurants in one place. From anywhere, they can check the details about the different restaurants, what service they provide, which items are available, where the restaurant is located, and many more. People can also give reviews on food items.<p/>
 <p style="text-align: justify;">Treatex Restaurant is a web application built with the latest technologies for potential customers of restaurants.</p>
 
 <p><strong>FEATURES</strong></p>
