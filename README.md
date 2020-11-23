@@ -31,18 +31,17 @@
 <li>A customer can check the prices of the food items</li>
 <li>Offer section - latest exclusive offers will be shown here</li>
 <li>Contact form - to register and give feedback about food and restaurants</li>
-<li>A video walkthrough to the restaurant to check decoration and environment</li>
-  
+<li>A video walkthrough to the restaurant to check decoration and environment</li> 
+</ul>  
 <p><strong>TECHNOLOGY</strong></p>
 <p>I decided to go with the latest technologies to develop this application to give users a better experience.</p>
-
-<p><em>Frontend and Backend</em></p>
+<p><em><strong>Frontend and Backend</strong></em></p>
 <p style="text-align: justify;">For the UI, we will be using HTML, CSS, JavaScript. I will also use React Framework with redux. This enables cross-platform development, which allows the web app to be compatible with both PC and mobile platforms. It also gives a more premium user interface and smoother experience.</p>
-<p><em>Database</em></p>
+<p><em><strong>Database</strong></em></p>
 <p style="text-align: justify;">I will be using a MySQL database and JSON server, Rest API, which provides high performance, availability, and automatic scaling.
 I will integrate a real-time chatting system using React hooks and socket.io 
 To keep up with the modern forms of technology, I will be using Formik which uses React hooks and components for hassle-free form validation to ensure complete user satisfaction.</p>
-<p><em>Additional Features</em></p>
+<p><em><strong>Additional Features</strong></em></p>
 <p style="text-align: justify;">I will add Facebook Messenger API to Treatex react app to connect directly with restaurants. I will also add Google Map API to show direction of the restaurants from user’s current location.</p>
 
 <p><strong>Monetization</strong></p>
