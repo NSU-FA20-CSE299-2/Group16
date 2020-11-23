@@ -19,9 +19,9 @@
 <p><strong>&nbsp;</strong></p>
 
 <p><strong>INTRODUCTION</strong></p>
-<p style="text-align: justfy;">In today’s world, Food has become more than just a necessity. The restaurant business has become more challenging and competitive day by day. Designing a restaurant business means committing responsibilities such as providing excellent service, quality food, and a fantastic atmosphere, taking a lot of time and money. We often see their business fall apart after doing all this because people usually do not know much about it. There is nothing where people can know anything about restaurants in one place.</p>
-<p style="text-align: justfy;">My goal is to make a web application where people can know more about various restaurants in one place. From anywhere, they can check the details about the different restaurants, what service they provide, which items are available, where the restaurant is located, and many more. People can also give reviews on food items.<p/>
-<p style="text-align: justfy;">Treatex Restaurant is a web application built with the latest technologies for potential customers of restaurants.</p>
+<p style="text-align: justify;">In today’s world, Food has become more than just a necessity. The restaurant business has become more challenging and competitive day by day. Designing a restaurant business means committing responsibilities such as providing excellent service, quality food, and a fantastic atmosphere, taking a lot of time and money. We often see their business fall apart after doing all this because people usually do not know much about it. There is nothing where people can know anything about restaurants in one place.</p>
+<p style="text-align: justify;">My goal is to make a web application where people can know more about various restaurants in one place. From anywhere, they can check the details about the different restaurants, what service they provide, which items are available, where the restaurant is located, and many more. People can also give reviews on food items.<p/>
+<p style="text-align: justify;">Treatex Restaurant is a web application built with the latest technologies for potential customers of restaurants.</p>
 
 <p><strong>FEATURES</strong></p>
 <ul>
@@ -32,23 +32,24 @@
 <li>Offer section - latest exclusive offers will be shown here</li>
 <li>Contact form - to register and give feedback about food and restaurants</li>
 <li>A video walkthrough to the restaurant to check decoration and environment</li>
+  
 <p><strong>TECHNOLOGY</strong></p>
 <p>I decided to go with the latest technologies to develop this application to give users a better experience.</p>
 
 <p><em>Frontend and Backend</em></p>
-<p style="text-align: justfy;">For the UI, we will be using HTML, CSS, JavaScript. I will also use React Framework with redux. This enables cross-platform development, which allows the web app to be compatible with both PC and mobile platforms. It also gives a more premium user interface and smoother experience.</p>
+<p style="text-align: justify;">For the UI, we will be using HTML, CSS, JavaScript. I will also use React Framework with redux. This enables cross-platform development, which allows the web app to be compatible with both PC and mobile platforms. It also gives a more premium user interface and smoother experience.</p>
 <p><em>Database</em></p>
-<p style="text-align: justfy;">I will be using a MySQL database and JSON server, Rest API, which provides high performance, availability, and automatic scaling.
+<p style="text-align: justify;">I will be using a MySQL database and JSON server, Rest API, which provides high performance, availability, and automatic scaling.
 I will integrate a real-time chatting system using React hooks and socket.io 
 To keep up with the modern forms of technology, I will be using Formik which uses React hooks and components for hassle-free form validation to ensure complete user satisfaction.</p>
 <p><em>Additional Features</em></p>
-<p style="text-align: justfy;">I will add Facebook Messenger API to Treatex react app to connect directly with restaurants. I will also add Google Map API to show direction of the restaurants from user’s current location.</p>
+<p style="text-align: justify;">I will add Facebook Messenger API to Treatex react app to connect directly with restaurants. I will also add Google Map API to show direction of the restaurants from user’s current location.</p>
 
 <p><strong>Monetization</strong></p>
-<p style="text-align: justfy;">As the web application is targeting the potential customers of the various restaurants, I will try to get funds from restaurants. Restaurants can also place ads on Treatex with a charge based on pay per impressions. I will provide advertisement packages for restaurants. </p>
+<p style="text-align: justify;">As the web application is targeting the potential customers of the various restaurants, I will try to get funds from restaurants. Restaurants can also place ads on Treatex with a charge based on pay per impressions. I will provide advertisement packages for restaurants. </p>
   
 <p><strong>Social Impact</strong></p>
-<p style="text-align: justfy;">Treatex Restaurant is a all in one kind of app. They can compare the price, know which food is available, which restaurant’s environment is good to go with families or friends or with beloved one. This will save time and money of the people and give them a better idea to enjoy their time and food.
+<p style="text-align: justify;">Treatex Restaurant is a all in one kind of app. They can compare the price, know which food is available, which restaurant’s environment is good to go with families or friends or with beloved one. This will save time and money of the people and give them a better idea to enjoy their time and food.
   
 A study done by market research company shows that, positive online reviews influence purchasing decisions of over 80 percent of consumer. As my app will have food & restaurant review system, it seems clear that, the restaurants with better food will be benefited.
 </p>
