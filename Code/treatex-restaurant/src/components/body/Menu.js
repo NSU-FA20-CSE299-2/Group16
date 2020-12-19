@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import DISHES from '../../data/dishes'
 import MenuItem from './MenuItem'
 
@@ -10,7 +11,7 @@ class Menu extends Component {
         const menu = this.state.dishes.map(item =>{
             return(
                 <div>
-                    <MenuItem dish = {item} key={item.id}/>
+                    <MenuItem dish = {item} key = {item.id}/>
                 </div>
 
             );
@@ -18,7 +19,7 @@ class Menu extends Component {
        
         return(
             <div className = 'container'>
-                <div className="row">
+                <div className="row xs='2'">
                     <div className="col-6">
                         {menu}
                     </div>
