@@ -1,27 +1,41 @@
 import React,{Component} from 'react';
-import { Container, Row, Col } from 'reactstrap';
 import DISHES from '../../data/dishes'
 import MenuItem from './MenuItem'
+import DishDetail from './DishDetail'
 
 class Menu extends Component {
     state = {
-        dishes : DISHES
+        dishes : DISHES,
+        selectedDish:null
+    }
+    onDishSelect = dish =>{
+        this.setState({selectedDish : dish})
     }
     render(){
         const menu = this.state.dishes.map(item =>{
             return(
-                <div>
-                    <MenuItem dish = {item} key = {item.id}/>
-                </div>
+                    <MenuItem 
+                    dish = {item} 
+                    key = {item.id}
+                    DishSelect={()=> this.onDishSelect(item)}
+                    />
 
             );
         })
+
+        let dishDetail = null;
+        if(this.state.selectedDish !=null){
+            dishDetail= <DishDetail dish = {this.state.selectedDish}/>
+        }
        
         return(
             <div className = 'container'>
-                <div className="row xs='2'">
+                <div className="row">
                     <div className="col-6">
                         {menu}
+                    </div>
+                    <div className="col-6">
+                        {dishDetail}
                     </div>
                 </div>
             </div>

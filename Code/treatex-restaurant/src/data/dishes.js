@@ -32,7 +32,7 @@ const DISHES = [
     },
 
     {
-        id : 4,
+        id : 1,
         name : 'Burger',
         image : 'assets/images/0burger.jpg',
         label : 'Hot',
@@ -64,7 +64,7 @@ const DISHES = [
     },
 
     {
-        id : 1,
+        id : 2,
         name : 'Ginger Burger',
         image : 'assets/images/0burger.jpg',
         label : 'Hot',
@@ -96,7 +96,7 @@ const DISHES = [
     },
 
     {
-        id : 2,
+        id : 3,
         name : 'Ginger',
         image : 'assets/images/0burger.jpg',
         label : 'Hot',
@@ -128,7 +128,7 @@ const DISHES = [
     },
 
     {
-        id : 3,
+        id : 4,
         name : 'Prawn',
         image : 'assets/images/0burger.jpg',
         label : 'Hot',
