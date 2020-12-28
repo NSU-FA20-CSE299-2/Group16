@@ -49,18 +49,38 @@ class Contact extends Component {
                                     <Input type="email" name='email' placeholder='Email' value={this.state.email}/>       
                                 </Col>
                             </FormGroup>
-                            <FormGroup>
-                               
-                                <Col md={{size : 6,offset:3}}>
+
+                            <FormGroup>    
+                                <Col md={{size : 6,offset:2}}>
                                     <FormGroup check>
                                         <Label check>
-                                            <Input type ="checkbox" name="agree" checkrd={this.state.agree}/><strong>
-                                                May we contact you?
-                                            </strong>
+                                            <Input type ="checkbox" name="agree" checked={this.state.agree}/>
+                                            <strong>May we contact you?</strong>
                                         </Label>
-                                    </FormGroup>
+                                    </FormGroup>   
+                                </Col >
+                                <Col md={{size : 3,offset:1}}>
+                                    <Input type="select" name="contactType" value={this.state.contactType}>
+                                        <option>Tel.</option>
+                                        <option>Email</option>
+                                    </Input>
                                 </Col>
                             </FormGroup>
+
+                            <FormGroup row>
+                                <Label htmlfor="message" md={2}> Your Feedback</Label>
+                                <Col md={10}>
+                                    <Input type="textarea" name='message' value={this.state.message}>  
+                                    </Input>     
+                                </Col>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Col md={{size : 10,offset:2}}>
+                                        <Button type="submit" color="primary">
+                                            Send us Feedback
+                                        </Button>
+                                    </Col>
+                                </FormGroup>    
                         </Form>
                     </div>
                 </div>
