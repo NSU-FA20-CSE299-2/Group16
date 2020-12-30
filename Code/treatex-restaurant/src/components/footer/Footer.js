@@ -5,7 +5,7 @@ const Footer = ()=>{
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-auto">
-                    <p className="footer-text"><b>Treatex Reastaurant &#169; Copyright 2020 </b> </p>
+                    <p className="footer-text"><b>Treatex Reastaurant &#169; Copyright 2020. Developed by <a href="https://github.com/SanyMKhaled">Sany Mohammad Khaled</a></b> </p>
                 </div>
             </div>
             

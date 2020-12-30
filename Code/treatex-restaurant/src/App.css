@@ -1,3 +1,18 @@
 .App {
     text-align: center;
 }
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: #34495e;
+    padding-top: 17px;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+}
+
+.footer-text {
+    color: #ecf0f1;
+    padding: 0%;
+}
