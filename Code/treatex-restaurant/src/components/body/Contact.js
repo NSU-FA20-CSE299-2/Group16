@@ -30,6 +30,7 @@ class Contact extends Component {
         event.preventDefault();
     }
     render(){
+        document.title = "Treatex-Contact"
 
         return(
 
