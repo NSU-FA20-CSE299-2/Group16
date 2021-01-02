@@ -5,6 +5,6 @@ const initialState = {
     comments: COMMENTS,
 }
 
-const reducer = (state,action)=>{
+export const Reducer = (state,action)=>{
     return state 
 }
