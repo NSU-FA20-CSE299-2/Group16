@@ -6,15 +6,15 @@ import LoadComments from './LoadComments'
 const DishDetail= props=>{
     return(
         <div>
-            <Card style={{margin:"10px"}}>
+            <Card style={{margin:"10px"}} body outline color="warning">
                 <CardImg alt={props.dish.name} src={props.dish.image}/>
                     <CardBody style={{textAlign :"left"}}>
-                        <CardTitle>{props.dish.name}</CardTitle>
+                        <CardTitle style={{textAlign :"center"}}>{props.dish.name}</CardTitle> <hr outline color="warning" width="50%"/>
                         <CardText>                            
-                            <p>{props.dish.description}</p>  
+                            <p>{props.dish.description}</p>
                             <p>MRP : {props.dish.price} TK.</p>    
                         </CardText>
-                        <hr/>
+                        <hr outline color="warning" />
                         <LoadComments comments={props.comments}/>
                     </CardBody>
             </Card>
