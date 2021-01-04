@@ -3,7 +3,7 @@ import React from 'react';
 
 const Slides = [
   {
-    src: "",
+    src: "assets/images/1slide.png",
     altText: 'Slide 1',
     caption: 'Slide 1',
     header: 'Slide 1 Header',
