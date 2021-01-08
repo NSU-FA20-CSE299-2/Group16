@@ -43,7 +43,6 @@ class CommentForm extends Component{
                     name='rating'
                     value={this.state.rating}
                     onChange = {this.handleInputChange}>
-                    onChange = {this.handleInputChange}
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
