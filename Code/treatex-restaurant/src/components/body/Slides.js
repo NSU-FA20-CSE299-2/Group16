@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 const Slides = [
   {
     src: "assets/images/1slide.png",

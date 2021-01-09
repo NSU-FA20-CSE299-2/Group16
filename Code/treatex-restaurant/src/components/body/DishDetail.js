@@ -10,7 +10,7 @@ const DishDetail= props=>{
             <Card style={{margin:"10px"}} body outline color="warning">
                 <CardImg alt={props.dish.name} src={props.dish.image}/>
                     <CardBody style={{textAlign :"left"}}>
-                        <CardTitle style={{textAlign :"center"}}>{props.dish.name}</CardTitle> <hr outline color="warning" width="50%"/>
+                        <CardTitle style={{textAlign :"center"}}>{props.dish.name}</CardTitle> <hr color="warning" width="50%"/>
                         <CardText>                            
                             <p>{props.dish.description}</p>
                             <p>MRP : {props.dish.price} TK.</p>    
