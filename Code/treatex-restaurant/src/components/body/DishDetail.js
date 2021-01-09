@@ -15,10 +15,10 @@ const DishDetail= props=>{
                             <p>{props.dish.description}</p>
                             <p>MRP : {props.dish.price} TK.</p>    
                         </CardText>
-                        <hr outline color="warning" />
+                        <hr color="warning" />
                         <LoadComments comments={props.comments}/>
                         <hr/>
-                        <CommentForm dishId={props.dish.id}/>
+                        <CommentForm dishId={props.dish.id} addComment={props.addComment}/>
                     </CardBody>
             </Card>
         </div>
