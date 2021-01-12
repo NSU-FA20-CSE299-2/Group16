@@ -48,7 +48,9 @@ class Contact extends Component {
                                     <Control.text
                                     model=".firstname" 
                                     name='firstname'
-                                    placeholder='First Name'/>       
+                                    placeholder='First Name'
+                                    className="form-control"
+                                    />       
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -57,7 +59,8 @@ class Contact extends Component {
                                     <Control.text
                                     model=".lastname"
                                     name='lastname'
-                                    placeholder='Last Name' />       
+                                    placeholder='Last Name'
+                                    className="form-control" />       
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -66,9 +69,8 @@ class Contact extends Component {
                                     <Control.text
                                     model=".telnum" 
                                     name='telnum' 
-                                    placeholder='Phone Number' 
-                                    value={this.state.telnum} 
-                                    onChange={this.handleInputChange}/>       
+                                    placeholder='Phone Number'
+                                    className="form-control" />       
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -77,7 +79,8 @@ class Contact extends Component {
                                     <Control.text
                                     model=".email" 
                                     name='email' 
-                                    placeholder='Email' />       
+                                    placeholder='Email'
+                                    className="form-control" />       
                                 </Col>
                             </FormGroup>
 
@@ -85,9 +88,10 @@ class Contact extends Component {
                                 <Col md={{size : 6,offset:2}}>
                                     <FormGroup check>
                                         <Label check>
-                                            <Control.text
+                                            <Control.checkbox
                                             model=".agree" 
-                                            name="agree" />
+                                            name="agree" 
+                                            className="from-check-input"/>
                                             <strong>May we contact you?</strong>
                                         </Label>
                                     </FormGroup>   
@@ -95,7 +99,8 @@ class Contact extends Component {
                                 <Col md={{size : 3,offset:1}}>
                                     <Control.select
                                     model="contactType"
-                                    name="contactType">
+                                    name="contactType"
+                                    className="form-control">
                                         <option>Tel.</option>
                                         <option>Email</option>
                                     </Control.select>
@@ -109,6 +114,7 @@ class Contact extends Component {
                                     model=".message"
                                     name='message'  
                                     rows="6" 
+                                    className="form-control"
                                     />       
                                 </Col>
                                 </FormGroup>
