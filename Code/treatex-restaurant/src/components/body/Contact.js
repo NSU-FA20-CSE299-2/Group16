@@ -1,6 +1,15 @@
 import React,{Component} from  'react'
 import {Button,FormGroup,Label,Col} from 'reactstrap'
 import {Form, Control, Errors, actions} from 'react-redux-form'
+import {connect} from 'react-redux'
+
+const mapDispatchToProps = dispatch =>{
+    return{
+        resetFeedbackForm: () =>{
+            dispatch(actions.reset('feedback'))
+        }
+    }
+}
 
 const required = val => val && val.length;
 const isNumber = val =>!isNaN(Number(val));
@@ -19,7 +28,7 @@ class Contact extends Component {
                         <h3>Send Us Your Feedback</h3>
                     </div>
                     <div className="col-12 col-md-7">
-                        <Form onSubmit={values => this.handleSubmit(values)}>
+                        <Form model="feedback" onSubmit={values => this.handleSubmit(values)}>
                             <FormGroup row>
                                 <Label htmlFor="firstname" md={2}> First Name</Label>
                                 <Col md={10}>
@@ -122,7 +131,7 @@ class Contact extends Component {
                                             <Control.checkbox
                                             model=".agree" 
                                             name="agree" 
-                                            className="from-check-input"/>
+                                            className="form-check-input"/>
                                             <strong>May we contact you?</strong>
                                         </Label>
                                     </FormGroup>   
@@ -168,11 +177,11 @@ class Contact extends Component {
                                         </Button>
                                     </Col>
                                 </FormGroup>    
-                        </*Form>
+                        </Form>
                     </div>
                 </div>
         )
     }   
 }
 
-export default Contact;
+export default connect(null,mapDispatchToProps)(Contact);
