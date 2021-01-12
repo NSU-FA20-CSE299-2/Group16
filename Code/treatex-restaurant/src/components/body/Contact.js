@@ -10,8 +10,6 @@ class Contact extends Component {
         document.title = "Treatex-Contact"
 
         return(
-
-            <div className="contaiver">
                 <div className="row row-content" style={{paddingLeft:'20%', textAlign:'left'}}>
                     <div className="col-12">
                         <h3>Send Us Your Feedback</h3>
@@ -104,7 +102,6 @@ class Contact extends Component {
                         </LocalForm>
                     </div>
                 </div>
-            </div>
         )
     }   
 }
