@@ -1,5 +1,6 @@
 import React,{Component} from  'react'
 import {Button,Form,FormGroup,Label,Input,Col} from 'reactstrap'
+import {LocalForm, Control, Errors} from 'react-redux-form'
 
 class Contact extends Component {
     constructor(props){
@@ -40,29 +41,43 @@ class Contact extends Component {
                         <h3>Send Us Your Feedback</h3>
                     </div>
                     <div className="col-12 col-md-7">
-                        <Form onSubmit={this.handleSubmit}>
+                        <LocalForm onSubmit={this.handleSubmit}>
                             <FormGroup row>
                                 <Label htmlFor="firstname" md={2}> First Name</Label>
                                 <Col md={10}>
-                                    <Input type="text" name='firstname' placeholder='First Name' value={this.state.firstname}       onChange={this.handleInputChange}/>       
+                                    <Control.text
+                                    model=".firstname" 
+                                    name='firstname'
+                                    placeholder='First Name'/>       
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
                                 <Label htmlFor="lastname" md={2}> Last Name</Label>
                                 <Col md={10}>
-                                    <Input type="text" name='lastname' placeholder='Last Name' value={this.state.lastname} onChange={this.handleInputChange}/>       
+                                    <Control.text
+                                    model=".lastname"
+                                    name='lastname'
+                                    placeholder='Last Name' />       
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
                                 <Label htmlFor="telnum" md={2}> Phone Num</Label>
                                 <Col md={10}>
-                                    <Input type="tel" name='telnum' placeholder='Phone Number' value={this.state.telnum} onChange={this.handleInputChange}/>       
+                                    <Control.text
+                                    model=".telnum" 
+                                    name='telnum' 
+                                    placeholder='Phone Number' 
+                                    value={this.state.telnum} 
+                                    onChange={this.handleInputChange}/>       
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
                                 <Label htmlFor="email" md={2}> Email</Label>
                                 <Col md={10}>
-                                    <Input type="email" name='email' placeholder='Email' value={this.state.email}onChange={this.handleInputChange}/>       
+                                    <Control.text
+                                    model=".email" 
+                                    name='email' 
+                                    placeholder='Email' />       
                                 </Col>
                             </FormGroup>
 
@@ -70,24 +85,31 @@ class Contact extends Component {
                                 <Col md={{size : 6,offset:2}}>
                                     <FormGroup check>
                                         <Label check>
-                                            <Input type ="checkbox" name="agree" checked={this.state.agree} onChange={this.handleInputChange}/>
+                                            <Control.text
+                                            model=".agree" 
+                                            name="agree" />
                                             <strong>May we contact you?</strong>
                                         </Label>
                                     </FormGroup>   
                                 </Col >
                                 <Col md={{size : 3,offset:1}}>
-                                    <Input type="select" name="contactType" value={this.state.contactType} onChange={this.handleInputChange}>
+                                    <Control.select
+                                    model="contactType"
+                                    name="contactType">
                                         <option>Tel.</option>
                                         <option>Email</option>
-                                    </Input>
+                                    </Control.select>
                                 </Col>
                             </FormGroup>
 
                             <FormGroup row>
                                 <Label htmlFor="message" md={2}> Your Feedback</Label>
                                 <Col md={10}>
-                                    <Input type="textarea" name='message' value={this.state.message} rows="6" onChange={this.handleInputChange}>  
-                                    </Input>     
+                                    <Control.textarea
+                                    model=".message"
+                                    name='message'  
+                                    rows="6" 
+                                    />       
                                 </Col>
                                 </FormGroup>
                                 <FormGroup>
@@ -97,7 +119,7 @@ class Contact extends Component {
                                         </Button>
                                     </Col>
                                 </FormGroup>    
-                        </Form>
+                        </LocalForm>
                     </div>
                 </div>
             </div>
