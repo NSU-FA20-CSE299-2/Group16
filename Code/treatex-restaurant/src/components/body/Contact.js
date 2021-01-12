@@ -2,6 +2,10 @@ import React,{Component} from  'react'
 import {Button,FormGroup,Label,Col} from 'reactstrap'
 import {LocalForm, Control, Errors} from 'react-redux-form'
 
+const required = val => val && val.length;
+const isNumber = val =>!isNaN(Number(val));
+const validEmail = val => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(val);
+
 class Contact extends Component {
     handleSubmit = values => {
         console.log(values);
