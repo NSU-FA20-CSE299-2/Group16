@@ -3,32 +3,8 @@ import {Button,Form,FormGroup,Label,Input,Col} from 'reactstrap'
 import {LocalForm, Control, Errors} from 'react-redux-form'
 
 class Contact extends Component {
-    constructor(props){
-        super(props);
-        this.state = {
-            firstname : "",
-            lastname : "",
-            telnum : "",
-            email : "",
-            agree : false,
-            contactType: 'Tel',
-            message :""
-        }
-        this.handleInputChange = this.handleInputChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-
-    }
-
-    handleInputChange= event =>{
-        const value = event.type.target === 'checkbox' ? event.target.checked : event.target.value;
-        const name = event.target.name;
-        this.setState({
-            [name]: value
-        })
-    }
-    handleSubmit = event => {
-        console.log(this.state);
-        event.preventDefault();
+    handleSubmit = values => {
+        console.log(values);
     }
     render(){
         document.title = "Treatex-Contact"
@@ -41,7 +17,7 @@ class Contact extends Component {
                         <h3>Send Us Your Feedback</h3>
                     </div>
                     <div className="col-12 col-md-7">
-                        <LocalForm onSubmit={this.handleSubmit}>
+                        <LocalForm onSubmit={values => this.handleSubmit(values)}>
                             <FormGroup row>
                                 <Label htmlFor="firstname" md={2}> First Name</Label>
                                 <Col md={10}>
