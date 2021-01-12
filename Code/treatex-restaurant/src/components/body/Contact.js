@@ -1,5 +1,5 @@
 import React,{Component} from  'react'
-import {Button,Form,FormGroup,Label,Input,Col} from 'reactstrap'
+import {Button,FormGroup,Label,Col} from 'reactstrap'
 import {LocalForm, Control, Errors} from 'react-redux-form'
 
 class Contact extends Component {
@@ -24,7 +24,19 @@ class Contact extends Component {
                                     name='firstname'
                                     placeholder='First Name'
                                     className="form-control"
-                                    />       
+                                    validators={{
+                                        required
+                                    }}
+                                    /> 
+                                    <Errors
+                                    className="text-danger"
+                                    model=".firstname"
+                                    show="touched"
+                                    messages={
+                                        {
+                                            required: "First name is required"
+                                        }
+                                    }/>      
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -34,7 +46,19 @@ class Contact extends Component {
                                     model=".lastname"
                                     name='lastname'
                                     placeholder='Last Name'
-                                    className="form-control" />       
+                                    className="form-control" 
+                                    validators={
+                                        {required}
+                                    }/>  
+                                     <Errors
+                                    className="text-danger"
+                                    model=".lastname"
+                                    show="touched"
+                                    messages={
+                                        {
+                                            required: "Last name is required"
+                                        }
+                                    }/>     
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -44,7 +68,22 @@ class Contact extends Component {
                                     model=".telnum" 
                                     name='telnum' 
                                     placeholder='Phone Number'
-                                    className="form-control" />       
+                                    className="form-control"
+                                    validators={
+                                        {
+                                        required,
+                                        isNumber}
+                                    } />   
+                                     <Errors
+                                    className="text-danger"
+                                    model=".telnum"
+                                    show="touched"
+                                    messages={
+                                        {
+                                            required: "Telephone num is required",
+                                            isNumber : "Invalid Number"
+                                        }
+                                    }/>    
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
@@ -54,7 +93,21 @@ class Contact extends Component {
                                     model=".email" 
                                     name='email' 
                                     placeholder='Email'
-                                    className="form-control" />       
+                                    className="form-control"
+                                    validators={
+                                        {required,
+                                        validEmail}
+                                    } /> 
+                                     <Errors
+                                    className="text-danger"
+                                    model=".email"
+                                    show="touched"
+                                    messages={
+                                        {
+                                            required: "Email is required, ",
+                                            validEmail: "Invalid Email"
+                                        }
+                                    }/>      
                                 </Col>
                             </FormGroup>
 
@@ -89,7 +142,19 @@ class Contact extends Component {
                                     name='message'  
                                     rows="6" 
                                     className="form-control"
-                                    />       
+                                    validators={
+                                        {required}
+                                    }
+                                    />
+                                     <Errors
+                                    className="text-danger"
+                                    model=".message"
+                                    show="touched"
+                                    messages={
+                                        {
+                                            required: "You must write feedback or queries here"
+                                        }
+                                    }/>       
                                 </Col>
                                 </FormGroup>
                                 <FormGroup>
