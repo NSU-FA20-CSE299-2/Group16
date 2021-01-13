@@ -3,7 +3,7 @@ import COMMENTS from '../data/Comments'
 import {combineReducers}from 'redux'
 import {initialContactForm} from './forms'
 import {createForms} from 'react-redux-form'
-import * as actiontypes from './actions'
+import * as actiontypes from './actionTypes'
 
 const dishReducer = (dishState=DISHES,action)=>{
     switch(action.type){
