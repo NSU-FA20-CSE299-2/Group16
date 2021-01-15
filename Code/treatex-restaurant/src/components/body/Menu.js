@@ -44,7 +44,7 @@ class Menu extends Component {
         document.title = "Treatex-Menu"
         if(this.props.dishes.isLoading){
             return(
-                <Loading/>
+                <Loading />
             );
         } else{
             const menu = this.props.dishes.dishes.map(item =>{
