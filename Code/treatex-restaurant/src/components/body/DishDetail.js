@@ -4,7 +4,6 @@ import LoadComments from './LoadComments'
 import CommentForm from './CommentForm'
 import {baseUrl} from '../../redux/baseUrl'
 
-
 const DishDetail= props=>{
     return(
         <div>
@@ -17,7 +16,7 @@ const DishDetail= props=>{
                             <p>MRP : {props.dish.price} TK.</p>    
                         </CardText>
                         <hr color="warning" />
-                        <LoadComments comments={props.comments}/>
+                        <LoadComments comments={props.comments} commentIsLoading={props.commentIsLoading }/>
                         <hr/>
                         <CommentForm dishId={props.dish.id} addComment={props.addComment}/>
                     </CardBody>
