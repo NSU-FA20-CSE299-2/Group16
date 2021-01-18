@@ -1,1 +1,1 @@
-export const baseUrl = 'http://localhost:3001/dishes'
+export const baseUrl = 'http://localhost:3001/'
