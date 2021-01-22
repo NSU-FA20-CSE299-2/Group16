@@ -3,7 +3,7 @@
 <p align="center"><strong><img src="https://media.dhakatribune.com/uploads/2016/11/nsulogo.jpg" alt="" width="307" height="172" /></strong></p>
 <p align="center"><strong>North South University</strong></p>
 <p align="center">Department of Electrical &amp; Computer Engineering</p>
-<p align="center"><strong>Project Proposal</strong></p>
+<p align="center"><strong>Project Report</strong></p>
 <p align="center"><strong>Group No</strong>: 16</p>
 <p align="center"><strong>Fall 2020</strong></p>
 <p align="center"><strong>Project Name </strong>: Treatex Restaurant</p>
@@ -18,38 +18,92 @@
 <p><strong>&nbsp;</strong></p>
 <p><strong>&nbsp;</strong></p>
 
+# Table of Contents:
+
+    1. Introduction
+    2. Software Specification
+    3. Technology
+    4. Business Plan
+    5. Conclusion
+
+
 <p><strong>INTRODUCTION</strong></p>
-<p align: "justify">In today’s world, Food has become more than just a necessity. The restaurant business has become more challenging and competitive day by day. Designing a restaurant business means committing responsibilities such as providing excellent service, quality food, and a fantastic atmosphere, taking a lot of time and money. We often see their business fall apart after doing all this because people usually do not know much about it. There is nothing where people can know anything about restaurants in one place.</p>
-<p align:"justify">My goal is to make a web application where people can know more about various restaurants in one place. From anywhere, they can check the details about the different restaurants, what service they provide, which items are available, where the restaurant is located, and many more. People can also give reviews on food items.<p/>
-<p style="text-align: justify;">Treatex Restaurant is a web application built with the latest technologies for potential customers of restaurants.</p>
+<p align: "justify">In today’s world, Food has become more than just a necessity. The restaurant business has become more challenging and competitive day by day. We often see their business fall apart after doing all this because people usually do not know much about it. There is nothing where people can know anything about restaurants in one place.</p>
+<p align:"justify">My goal was to make a web application where people can know more about various restaurants in one place. From anywhere, they can check the details about the different restaurants, what service they provide, which items are available, where the restaurant is located, and many more. People can also give reviews on food items. <p/>
 
-<p><strong>FEATURES</strong></p>
-<ul>
-<li>A customer can view various restaurants</li>
-<li>Real-time chat with Restaurants</li>
-<li>A customer can view items from each restaurant</li>
-<li>A customer can check the prices of the food items</li>
-<li>Offer section - latest exclusive offers will be shown here</li>
-<li>Contact form - to register and give feedback about food and restaurants</li>
-<li>A video walkthrough to the restaurant to check decoration and environment</li> 
-</ul>  
-<p><strong>TECHNOLOGY</strong></p>
-<p>I decided to go with the latest technologies to develop this application to give users a better experience.</p>
-<p><em><strong>Frontend and Backend</strong></em></p>
-<p style="text-align: justify;">For the UI, we will be using HTML, CSS, JavaScript. I will also use React Framework with redux. This enables cross-platform development, which allows the web app to be compatible with both PC and mobile platforms. It also gives a more premium user interface and smoother experience.</p>
-<p><em><strong>Database</strong></em></p>
-<p style="text-align: justify;">I will be using a MySQL database and JSON server, Rest API, which provides high performance, availability, and automatic scaling.
-I will integrate a real-time chatting system using React hooks and socket.io 
-To keep up with the modern forms of technology, I will be using Formik which uses React hooks and components for hassle-free form validation to ensure complete user satisfaction.</p>
-<p><em><strong>Additional Features</strong></em></p>
-<p style="text-align: justify;">I will add Facebook Messenger API to Treatex react app to connect directly with restaurants. I will also add Google Map API to show direction of the restaurants from user’s current location.</p>
+## 2. Software Specification
 
-<p><strong>Monetization</strong></p>
-<p style="text-align: justify;">As the web application is targeting the potential customers of the various restaurants, I will try to get funds from restaurants. Restaurants can also place ads on Treatex with a charge based on pay per impressions. I will provide advertisement packages for restaurants. </p>
-  
-<p><strong>Social Impact</strong></p>
-<p style="text-align: justify;">Treatex Restaurant is a all in one kind of app. They can compare the price, know which food is available, which restaurant’s environment is good to go with families or friends or with beloved one. This will save time and money of the people and give them a better idea to enjoy their time and food.
-  
-A study done by market research company shows that, positive online reviews influence purchasing decisions of over 80 percent of consumer. As my app will have food & restaurant review system, it seems clear that, the restaurants with better food will be benefited.
+Implemented Features :
+
+I have implemented a web app that stores the information about various foods of the restaurant, price and details information. Customers can post theier review and comments in a particular food. They can also give feedbabck for the restaurant. 
+
+### 2.1 Home Page
+<p align="center">
+  <img width="600" height="400" src= "Documentation/Project_Report_Images/Home.PNG/">
 </p>
-<p>&nbsp;</p>
+
+After enter the address of the website, user first of all see this page. Here he or she can view a slider containing information about the restaurant and promotional offers of the restaurant
+
+
+### 2.2 Menu
+<p align="center">
+  <img width="600" height="400" src= "Documentation/Project_Report_Images/Menu.PNG/">
+</p>
+
+In the menu page, a user can find the items of the restaurant. Menu contains the image of the item and a short tittle. This section is clickable.
+
+### 2.3 Menu Detail
+<p align="center">
+  <img width="600" height="400" src= "Documentation/Project_Report_Images/MenuDetails.PNG/">
+</p>
+
+After someone click on a Menu, a modal view opens up. Here he or she can view the price and details of the item. They can also check the ratings and food review of previous customer
+
+### 2.4 Review Section
+<p align="center">
+  <img width="600" height="400" src= "Documentation/Project_Report_Images/review.PNG/">
+</p>
+
+After opening the modal, they can see the revew as well as give the review. He or she needs to fill his or her name, rating and the food review.Instantly it will be shown on the review section
+
+### 2.5 Feedback
+<p align="center">
+  <img width="600" height="400" src= "Documentation/Project_Report_Images/feedback.PNG/">
+</p>
+
+If anyone wants to give any feedback to the restaurant owner, he or she can post it here with all the degtails
+
+### 2.6 Server
+<p align="center">
+  <img width="600" height="400" src= "Documentation/Project_Report_Images/server.PNG/">
+</p>
+
+The Item info,feedback texts and comments are stored in a local JSON server
+
+### 2.7 About
+
+I couldn’t  create this section of the website. A chatting system between restaurant and customer was proposed Hopefully I will work about it and integrate it later
+
+
+## 3)Technology:
+
+### 3.1 Proposed Technology Stack
+
+I selected Github as project management tool, For backend site of this site I selected Javascript React framework, Textbase JSON server for database management and Frontend part I selected HTML5, CSS3, Reactstrap and other necessary tools and language. I worked on VS code text editor also.
+
+### 3.2 Implemented Technology Stack
+
+I used Github as a project management tool. I use kanban board of Github as task allocator. For Frontend part, I use React, HTML5 and CSS3 and Reactstrap. And I used VS code as a text editor. On the other hand for Backend, I have used JSON server with Rest API. 
+
+
+## 4)Business Plan:
+
+This web app is now only based on one restaurant.There will be more restaurant added to a mother web app as like yelp. Promotional ads and paid promotion of different restaurant will be the main source of business. Subscription fee for including restaurant to the website is another way.
+
+## 5. Conclusion
+
+Treatex Restaurant is a all in one kind of app. They can compare the price, know which food is available, which restaurant’s environment is good to go with families or friends or with beloved one. 
+
+By this dedicated platform people can save time and money and it gives them a better option to enjoy their time and food.
+
+One platform, many restaurants.
