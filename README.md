@@ -14,7 +14,7 @@
 <p align="center"><strong>ID</strong><strong>:&nbsp; </strong>1711853042</p>
 <p align="center"><strong>Email</strong><strong>:</strong> <a href="mailto:sany.khaled@northsouth.edu">sany.khaled@northsouth.edu</a></p>
 <p align="center"><strong>Git Repository</strong><strong>: </strong><a href="https://github.com/NSU-FA20-CSE299-2/Group16">https://github.com/NSU-FA20-CSE299-2/Group16</a></p>
-<p align="center"><strong>Date Prepared</strong><strong>: </strong>20/11/2020</p>
+<p align="center"><strong>Date Prepared</strong><strong>: </strong>22/01/2021</p>
 <p><strong>&nbsp;</strong></p>
 <p><strong>&nbsp;</strong></p>
 
